@@ -1,0 +1,195 @@
+.hero-section{
+    /* overflow-y: hidden; */
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(12, 12, 12);
+    background-image: url("../assets/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .menu{
+    position: absolute;
+    z-index: 1;
+    background-image: url(../assets/menu3.JPG);
+
+    background-color: #383d52;
+    width: 50vw;
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    left: 34%;
+    top: 0;
+    justify-content: end;
+    transition: opacity 0.4s ease;
+    animation: animatetop 0.4s;
+  }
+  @keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+  .hero-section h1{
+    position: absolute;
+    top: 20vh;
+    left: 26vw;
+    font-size: 9vh;
+    color: #9db2fc;
+    z-index: 1;
+  }
+  .hero-section p{
+    position: absolute;
+    top: 35vh;
+    left: 45vw;
+    font-size: 5vh;
+    color: rgb(203, 228, 250);
+    z-index: 1;
+  }
+  .hero-section h3{
+    color: #252839;
+    /* margin-top: -5vh; */
+    /* width: 50vw; */
+    font-size: 10vh;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+    z-index: 1;
+    
+  }
+  .hero-section h3::before{
+    content: attr(data-text);
+    position:absolute;
+    top:45%;
+    left: 18%;
+    width: 0;
+    height: 12%;
+    color: #FFB41D;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #061E5C;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+  @keyframes animate{
+    0%,10%,100%{
+      width: 0;
+    }
+    70%,90%{
+      width: 71%;
+    }
+  }
+  .hero-section img{
+    width: 100%;
+  }
+  .hero-section .line1{
+    width: 20vw;
+    height: 1vh;
+    background-color: rgb(233, 204, 78);
+    border-radius: 2vh;
+  }
+  .hero-section:hover .line1{
+    margin-left: 20vw;
+    transform: translate(42px, -90px) rotate(90deg) scaleX(2);
+    transition: 1s ease-in-out;
+    /* animation-timing-function: cubic-bezier(.42, 0, .58, 1); */
+  }
+  .button1{
+    position: absolute;
+    top: 65%;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 3vh;
+    background: transparent;
+    font-size: 4vh;
+    color: #a9c0f8;
+    /* border: none; */
+    font-family: "Lumanosimo", cursive;
+    font-weight: 600;
+    font-style: normal;
+    z-index: 1;
+  }
+  .button1:hover{
+    background-color: #a9c0f8;
+    color: #061E5C;
+    cursor: pointer;
+  }
+  
+  .button2{
+    position: absolute;
+    top: 80%;
+    width: 12vw;
+    height: 10vh;
+    border-radius: 3vh;
+    /* background: transparent; */
+    font-size: 3vh;
+    background-color: #a9c0f8;
+    color: #061E5C;
+    /* border: none; */
+    font-family: "Lumanosimo", cursive;
+    font-weight: 600;
+    font-style: normal;
+    z-index: 1;
+  }
+  .button2:hover{
+    background: transparent;
+    color: #a9c0f8;
+    cursor: pointer;
+  }
+  .responsiveMenu{
+    position: absolute;
+    z-index: 3;
+    background-image: url(../assets/menu3.JPG);
+    background-color: #383d52;
+    width: 50vw;
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    left: 25%;
+    top: 0;
+    justify-content: end;
+  }
+  
+  .responsiveMenu button{
+    width: 2vw;
+    float: right;
+    border: 1px solid white;
+    padding: 0.5vh;
+    border-radius: 50%;
+    background-color: #a9c0f8;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width:500px){
+    .menu{
+      position: absolute;
+      z-index: 1;
+      background-image: url(./assets/menu3.JPG);
+      background-color: #383d52;
+      width: 50vw;
+      height: 100vh;
+      background-position:center;
+      background-repeat: no-repeat;
+      left: 34%;
+      top: 0;
+      justify-content: end;
+    }
+    
+    .menu button{
+      width: 2vw;
+      float: right;
+      border: 1px solid white;
+      padding: 0.5vh;
+      border-radius: 50%;
+      background-color: #a9c0f8;
+      height: 4vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }

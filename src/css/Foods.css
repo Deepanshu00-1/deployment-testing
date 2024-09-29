@@ -1,0 +1,167 @@
+.Foods{
+    height: 270vh;
+    width: 100%;
+    background-color:whitesmoke;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    height: 13%;
+    width: 100%;
+    /* background-color: whitesmoke; */
+}
+.head h1{
+    font-size: 8vh;
+    padding: 18vh 0 0 18vw;
+    /* background-color: aqua; */
+    font-family: "Kalam", cursive;
+}
+.foodCards{
+    height: 87%;
+    width: 100%;
+    /* background-color: aquamarine;    */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 4vw;
+    padding: 6vh 0 0 0; */
+    padding: 4vw;
+    display: grid;
+    grid-template-rows: 25% auto;
+    /* grid-template-columns:repeat(30%)auto */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10vw; /* Adjust the gap value as needed */
+}
+.card{
+    height: 60vh;
+    width: 25vw;
+    /* background-color: antiquewhite; */
+    /* display: flex;
+    flex-direction: column;
+    border-radius: 5vh;
+    background: rgba(216, 212, 212, 0.5);
+    backdrop-filter: blur(5px); */
+    background-color: #f8f8f8;
+    padding: 3vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* margin: 1vw; */
+}
+.card .img{
+    height: 70%;
+    width: 100%;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    /* background-color: bisque; */
+}
+.card .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5vh;
+}
+.card .img img:hover{
+    cursor: pointer;
+    transform: translateY(-5vh);
+    transition: ease-in-out;
+}
+.card .info{
+    height: 20%;
+    width: 100%;
+    /* background-color: rgb(151, 135, 115); */
+    display: flex;
+    flex-direction: column;
+}
+.card .access{
+    height: 10%;
+    width: 110%;
+    display: flex;
+    /* background-color: rgb(14, 17, 16); */
+    flex-direction: row;
+    align-items: center;
+    margin-left: -1vw;
+    padding-left: 4vw;
+}
+.card .access .price{
+    margin-left: -4vw;
+    width: 4vw;
+    height: 5vh;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    font-size: 4vh;
+}
+.card .access .like{
+    margin-left: 1vw;
+    height: 4vh;
+    width: 2vw;
+    font-size: 5vh;
+    margin-top: -1.5vh;
+}
+.card .access i{
+    color: hsla(0, 0%, 59%, 0.897);
+    margin-left: 2.5vw;
+}
+.card .access i:hover{
+    /* color: crimson; */
+    cursor: pointer;
+    /* text-decoration-color: crimson; */
+}
+.card .access span{
+    height: 5vh;
+    width: 3vw;
+    /* background-color: #f8f8f8; */
+    position: absolute;
+    margin-left: 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+}
+
+.card .access button{
+    height: 5vh;
+    width: 6vw;
+    background-color: rgb(202, 202, 202);
+    font-size: 2vh;
+    /* z-index: 1100; */
+    position: absolute;
+    margin-left: 8vw;
+    border-radius: 1vh;
+    /* font-weight: bold; */
+}
+
+.card .access button:hover{
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+.card .access button{
+    border: 2px solid #FFB41D;
+}
+.card .access button:active{
+    border: 2px solid #061E5C;
+}
+
+.card .access .btn2{
+    height: 5vh;
+    width: 3vw;
+    background-color: rgb(202, 202, 202);
+    font-size: 4vh;
+    /* z-index: 1100; */
+    position: absolute;
+    margin-left: 16vw;
+    border-radius: 1vh;
+    /* font-weight: bold; */
+    border: 2px solid #FFB41D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .access .btn2:active{
+    border: 2px solid #061E5C;
+}
+
+.card .access .btn2:hover{
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}

@@ -1,0 +1,205 @@
+.cartSection{
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(224, 203, 176); */
+    display: flex;
+    flex-direction: column;
+}
+
+.cartSection .heading{
+    height: 30vh;
+    width: 100%;
+    background-color: azure;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.cartSection .heading p{
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 39%;
+    font-family: "SUSE", sans-serif;
+    font-weight: 500;
+}
+
+.cartSection .heading i{
+    position: absolute;
+    top: 20%;
+    left: 52%;
+    font-size: 40px;
+}
+
+.cartSection .cartItems{
+    height: 70vh;
+    width: 100%;
+    background-color: aquamarine;
+    padding: 2vh;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.cartSection .cartItems .item1{
+    margin-left: 1vw;
+    height: 50%;
+    width: 90%;
+    /* background-color: antiquewhite; */
+    display: flex;
+}
+.cartSection .cartItems .item1 .itemImage{
+    height: 100%;
+    width: 20%;
+    background-position: center;
+    background-size: cover;
+}
+.cartSection .cartItems .item1 .itemImage img{
+    height: 100%;
+    width: 100%;
+}
+
+.cartSection .cartItems .item1 .itemDetails{
+    height: 100%;
+    width: 80%;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.cartSection .cartItems .item1 .itemDetails .itemName{
+    height: 20%;
+    width: 100%;
+    /* background-color:cornflowerblue; */
+}
+.cartSection .cartItems .item1 .itemDetails .itemPrice{
+    height: 20%;
+    width: 100%;
+    /* background-color:rgb(129, 142, 167); */
+}
+.cartSection .cartItems .item1 .itemDetails .itemDescryption{
+    height: 20%;
+    width: 100%;
+    /* background-color:rgb(60, 62, 65); */
+}
+
+/* .cartSection .heading i{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    box-shadow: 10px black;
+    width: 20vw;
+    height: 20vh;
+    font-size: 20px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    margin: 0;
+    padding: 0;
+}
+
+aside{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.to-do-list{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    padding-top: 10vh;
+}
+.to-do-list h1{
+    font-size: 2rem;
+    color: white;
+}
+.to-do-list button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.to-do-list .add-button{
+   
+    background-color: rgb(86, 253, 253);
+}
+.to-do-list .add-button:hover{
+    background-color: rgb(151, 255, 255);
+}
+.to-do-list .delete-button{
+    background-color: rgb(255, 52, 52);
+}
+.to-do-list .delete-button:hover{
+    background-color: rgb(255, 109, 109);
+}
+.to-do-list .move-button{
+    background-color: rgb(66, 255, 49);
+}
+.to-do-list .move-button:hover{
+    background-color: rgb(124, 255, 112);
+}
+.to-do-list input[type="text"]{
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.5);
+    border-radius: 5px;
+    color: hsl(0, 0%, 0%, 0.5);
+}
+.to-do-list ol{
+    padding: 0;
+}
+.to-do-list li{
+    width: 30vw;
+    height: 20vh;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: hsl(0, 0%, 97%);
+    margin-bottom: 10px;
+    border: 3px solid hsla(0, 0%, 85%, 0.753);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+.to-do-list .text{
+    flex: 1;
+}
+.to-do-list .delete-button, .move-button{
+    padding: 8px 12px;
+    margin-left: 10px;
+} */
