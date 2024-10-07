@@ -16,30 +16,19 @@ import Cart from "./Routing/Cart";
 import { useState } from "react";
 
 import { itemContext } from "./context/context";
+import { itemAddedContext } from "./context/addedItemContext";
 
 function App() {
-//   const router = createBrowserRouter([
-//     {
-//       path: "/",
-//       element: <><App /></>,
-//     },
-//     {
-//       path: "./login",
-//       element: <><LoginForm /></>,
-//     },
-//     {
-//       path: "./signup",
-//       element: <><SignUpForm /></>,
-//     }
-// ])
 const [item, setItem] = useState([]);
+let [addedItem, setAddedItem] = useState([]);
 
 
   return(
     <>  
     <itemContext.Provider value={{item,setItem}}>
+    <itemAddedContext.Provider value={{addedItem, setAddedItem}}>
+
       <div>
-      {/* <Header/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} /> 
@@ -47,10 +36,8 @@ const [item, setItem] = useState([]);
         <Route path="/cart" element={<Cart />}/>
       </Routes>
       </div>
-      {/* <Hero/> */}
-      {/* <Foods/> */}
-      {/* <RouterProvider router={router}/> */}
-      </itemContext.Provider>
+    </itemAddedContext.Provider>
+    </itemContext.Provider>
     </>
   )
 }

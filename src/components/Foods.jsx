@@ -14,8 +14,6 @@ const displayFoodCard = (FoodData1)=>{
         />
     )
 }
-
-
 const Foods =()=>{
 
     return(

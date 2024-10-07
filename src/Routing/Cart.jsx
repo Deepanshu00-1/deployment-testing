@@ -13,7 +13,15 @@ const Cart =()=>{
     // console.log(items)
     
     const value = useContext(itemContext);
-
+    const storedItem=[
+        {
+            id:1,
+            addedItemName: value.item.itemName,
+            addedItemPrice: value.item.itemPrice,
+            addedItemDetail: value.item.itemDescryption,
+        },
+        
+    ]
 
     return(
         <>
